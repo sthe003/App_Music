@@ -29,6 +29,12 @@ public class Musica extends Audio {
         this.genero = genero;
     }
 
-
-
+    @Override
+    public int getTotalCurtidas() {
+        if (this.getTotalCurtidas() > 5000) {
+            return 10;
+        } else {
+            return 8;
+        }
+    }
 }
