@@ -30,11 +30,11 @@ public class Musica extends Audio {
     }
 
     @Override
-    public int getTotalCurtidas() {
-        if (this.getTotalCurtidas() > 5000) {
+    public int getClassificacao() {
+        if (this.getTotalCurtidas() >= 1000) {
             return 10;
         } else {
-            return 8;
+            return 7;
         }
     }
 }

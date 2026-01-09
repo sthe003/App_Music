@@ -22,7 +22,7 @@ public class Podcast extends Audio {
 
     @Override
     public int getClassificacao() {
-        if (this.getTotalCurtidas() > 100){
+        if (this.getTotalCurtidas() >= 100){
             return 10;
         } else {
             return 8;
